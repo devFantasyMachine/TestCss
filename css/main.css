@@ -96,20 +96,48 @@ a , button, [role="button"], input, label, select, textarea {
 
 .adventure {
 
-
     display: flex; 
     flex-direction: row;  
     justify-content: space-between; 
     align-content: center;
     position: relative; 
     align-items: center;
-
-    margin-top: 60px; 
-    margin-bottom: 60px;  
- 
-
+    margin: 0px;
     width: 100%;    
 }
+
+.adventure.adventure_sec1 {
+
+    margin: 60px;    
+}
+
+.adventure.adventure_sec2 {
+
+    flex-direction: row-reverse;    
+    justify-content: space-around;    
+}
+
+.adventure.adventure_sec3 {
+    
+    justify-content: space-between;  
+    margin-right: 40px;  
+}
+
+.adventure.adventure_sec4 {
+    
+    flex-direction: row-reverse;   
+    justify-content: space-between;  
+    margin-top: 40px;  
+    margin-bottom: 40px;  
+
+}
+
+.adventure.adventure_sec5 {
+      
+    justify-content: space-between;  
+    margin: 40px;          
+}
+ 
  
 
 #head-red {
@@ -122,6 +150,12 @@ a , button, [role="button"], input, label, select, textarea {
     z-index: -1;
 
 }
+
+.adventure .text_part {
+ 
+    width: 45%;
+}
+
 
  
 
@@ -164,8 +198,7 @@ a , button, [role="button"], input, label, select, textarea {
 
     position:absolute; 
     left:0px; 
-    top:0px; 
-  
+    top:0px;   
 }
 
 
@@ -205,8 +238,14 @@ a , button, [role="button"], input, label, select, textarea {
     height: 25em; 
 }
 
+section.adventure.adventure_sec3 .img_part {
+    transform: translate(0);
+    max-width: 46%;
+}
+
+
 .adventure .text_part {
-       
+     
     margin: 5em; 
 }
 
@@ -223,20 +262,7 @@ a , button, [role="button"], input, label, select, textarea {
     margin-top: 34px;
 }
 
-
-
-
-.adventure .adventure_sec1 {
  
-    margin: 60px; 
-    padding: 20px; 
-    padding-left: 20px;
-}
-
-
-section.adventure.adventure_sec1 {
-    margin-top: 44px;
-}
 
 
 #dotted-line {
@@ -247,15 +273,15 @@ section.adventure.adventure_sec1 {
 
 #pink_line {
 
-    position: absolute;
-    top: 300%;
-    left: 0%;
+    position: absolute; 
+    left: 0px;
+    top: 400%;
 }
 
 #dotted-blue-line{
 
     position: absolute;
-    top: 60%;
+    top: 200%;
     left: 0%;
 }
 
