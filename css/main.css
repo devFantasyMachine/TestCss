@@ -1,0 +1,348 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.template-page {
+    background-color: #fffaf3;
+     
+}
+
+.main-heading{
+
+    display: flex;
+    flex-direction: column; 
+    padding: 10px;
+    text-align: center; 
+    justify-content: center; 
+}
+
+.main-heading h4 {
+    
+    color: #ffb04f;  
+}
+
+
+h3 {
+
+    height: 60px;
+    display: block;
+    position: relative;
+    justify-content: center; 
+
+    text-align: center !important;  
+    font-family: "Noto Serif"; 
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 65px;
+    text-transform: capitalize;
+}
+
+
+
+#blue_lines_ad {
+
+    max-width: 80%;
+    height: 300px;
+    position: absolute;
+    top: 0%;
+    right: 0; 
+    z-index: 98000;
+}
+
+
+
+ 
+
+ 
+
+
+
+a , button, [role="button"], input, label, select, textarea {
+  
+    touch-action: manipulation;    
+    background-color: transparent;     
+}
+
+.coll_link :hover {
+
+    color: gray;
+}
+
+
+.coll_link {
+
+    text-decoration: none; 
+    font-family: "Noto Serif";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1;
+    display: block;
+    clear: both;
+    padding: 12px 0;
+    box-sizing: border-box;
+    color: #2d2323;
+    width: auto;
+    text-align: left;  
+}
+
+
+
+.adventure {
+
+
+    display: flex; 
+    flex-direction: row;  
+    justify-content: space-between; 
+    align-content: center;
+    position: relative; 
+    align-items: center;
+
+    margin-top: 60px; 
+    margin-bottom: 60px;  
+ 
+
+    width: 100%;    
+}
+ 
+
+#head-red {
+
+    position:absolute;
+    left: 0;
+    top: 37px;
+    right: 0;
+    margin: 0 auto;
+    z-index: -1;
+
+}
+
+ 
+
+.adventure .text_part .desktop_head > h4 {
+ 
+    display: block;   
+  
+    position: relative;
+    justify-content:start;   
+
+    font-family: "Noto Serif";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 49px;
+    color: #2d2323;
+    text-shadow: 0 0 1px #2d2323;
+    position: relative;
+    z-index: 9;
+    padding-left: 12px;
+}
+
+.adventure .text_part .desktop_head > h4 > svg {
+ 
+    position:absolute;  
+    left: 0px;
+    top: -10px;  
+    margin-top: 35px;
+    z-index: -60;
+
+}
+
+
+ 
+ 
+.adventure > svg {
+
+    width: 100%;  
+    margin: 0px;  
+
+    position:absolute; 
+    left:0px; 
+    top:0px; 
+  
+}
+
+
+.adventure .text_part .mobile_head > h4 {
+ 
+    display: block;      
+
+    font-family: "Noto Serif";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 49px;
+    color: #2d2323;
+    text-shadow: 0 0 1px #2d2323;
+    position: relative;
+    z-index: 9;
+    padding-left: 12px;
+}
+
+.adventure .text_part .mobile_head > h4 > svg {
+ 
+    position:absolute;  
+    left: 0px;
+    top: -10px;  
+    margin-top: 35px;
+    z-index: -60;
+
+}
+
+
+
+
+
+.adventure .img_part img {
+ 
+    max-width: 100%;
+    height: 25em; 
+}
+
+.adventure .text_part {
+       
+    margin: 5em; 
+}
+
+.adventure .text_part p {
+
+    width: 70%;
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: .03em;
+    margin: 0 0 19.44444px;
+    margin-top: 34px;
+}
+
+
+
+
+.adventure .adventure_sec1 {
+ 
+    margin: 60px; 
+    padding: 20px; 
+    padding-left: 20px;
+}
+
+
+section.adventure.adventure_sec1 {
+    margin-top: 44px;
+}
+
+
+#dotted-line {
+    position: absolute;
+    top: 30%;
+    left: 0%;
+}
+
+#pink_line {
+
+    position: absolute;
+    top: 300%;
+    left: 0%;
+}
+
+#dotted-blue-line{
+
+    position: absolute;
+    top: 60%;
+    left: 0%;
+}
+
+
+@media (min-width : 400px ) and (max-width : 500px ) {
+
+      
+    .mobile_head {
+        display: block;
+    }
+
+    .adventure {
+
+        flex-direction: column;
+        height: 800px;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .desktop_head {
+        display: none;
+    }
+
+    .adventure > svg {
+
+        width: 100%;  
+        margin: 0px;  
+    
+        position:relative;         
+    }
+
+    .adventure .img_part {
+ 
+        max-width: 48%;
+        height: 50em; 
+    }
+  
+
+}
+     
+@media (min-width : 501px ) {
+
+    .adventure .img_part {
+ 
+        max-width: 48%;
+        height: 25em; 
+    }
+  
+    .mobile_head {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .adventure {
+
+        flex-direction: row;
+        height: 400px;
+    }
+
+    .desktop_head {
+        display: block;
+    }
+
+    .adventure > svg {
+
+        width: 100%;  
+        margin: 0px;  
+    
+        position:absolute; 
+        left:0px; 
+        top:0px;       
+    }
+
+
+}
+
+ 
